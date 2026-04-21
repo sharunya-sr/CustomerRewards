@@ -114,25 +114,3 @@ Returns points earned for a single transaction amount.
 **Example:** `GET /api/rewards/points?amount=120` → `90`
 
 ---
-
----
-
-## Running Tests
-
-```bash
-# Run all tests (unit + integration)
-./gradlew test           # macOS / Linux
-gradlew.bat test         # Windows
-
-# View the HTML test report
-open build/reports/tests/test/index.html
-```
-
-Test coverage includes:
-
-- **Unit tests** (`RewardsCalculatorServiceTest`) — 15 test cases covering points calculation,
-  edge cases, multi-customer scenarios, and all exception paths.
-- **Integration tests** (`RewardsControllerIntegrationTest`) — 10 full HTTP request/response
-  tests via MockMvc, including negative and error scenarios.
-
----
