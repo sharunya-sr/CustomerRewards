@@ -19,45 +19,6 @@ A customer earns reward points per transaction as follows:
 
 ---
 
-## Project Structure
-
-```
-customer-rewards/
-├── build.gradle
-├── settings.gradle
-├── gradle/
-│   └── wrapper/
-│       └── gradle-wrapper.properties
-├── README.md
-├── .gitignore
-└── src/
-    ├── main/
-    │   ├── java/com/rewards/customerrewards/
-    │   │   ├── CustomerRewardsApplication.java   # App entry point
-    │   │   ├── controller/
-    │   │   │   └── RewardsController.java        # REST endpoints
-    │   │   ├── service/
-    │   │   │   ├── RewardsCalculatorService.java # Core business logic
-    │   │   │   └── DataInitializerService.java   # Sample dataset
-    │   │   ├── model/
-    │   │   │   └── Transaction.java              # Transaction domain model
-    │   │   ├── dto/
-    │   │   │   ├── RewardSummary.java            # Response DTO
-    │   │   │   └── ErrorResponse.java            # Error DTO
-    │   │   └── exception/
-    │   │       ├── GlobalExceptionHandler.java   # Centralized error handling
-    │   │       ├── TransactionNotFoundException.java
-    │   │       └── InvalidTransactionException.java
-    │   └── resources/
-    │       └── application.properties
-    └── test/
-        └── java/com/rewards/customerrewards/
-            ├── 
-            │   └── RewardsCalculatorServiceTest.java      # Unit tests
-            └── 
-                └── RewardsControllerIntegrationTest.java  # Integration tests
-```
-
 ---
 
 
